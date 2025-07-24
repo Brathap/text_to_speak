@@ -1,0 +1,143 @@
+/*short arrangement*/
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Background and centering */
+body {
+  height: 600px;
+  background: linear-gradient(120deg,#6e8efb, #a777e3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+.login-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  padding: 40px 30px;
+  width: 320px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  text-align: center;
+}
+
+/* Heading */
+.login-container h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Group for each input field */
+.input-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/* Label styling */
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+/* Input field styling */
+.input-group input {
+  width: 100%;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Focus effect on input */
+.input-group input:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Login button */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #ffffff;
+  color: #1f4037;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #3348bd65;
+  color: #ffffff;
+}
+
+/* Sign up text */
+.signup-text {
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+.signup-text a {
+  color: #ffffff;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.signup-text a:hover {
+  color: #000;
+}
+/* Main container */
+.container{
+  background-color: rgba(255, 127, 127, 0.116);
+  backdrop-filter: blur(100px);
+  border-radius: 20px;
+  padding: 40px 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.459);
+  text-align: center;
+  color:white;
+  width: 300px;
+}
+/* Heading */
+.container h1 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: white;
+  text-shadow :2px 4px 8px black;
+}
+/* Input field */
+.container input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  outline: none;
+  box-shadow: 1 2px 5px rgba(0, 0, 0, 0.2);
+}
+/* Button */
+.container button {
+  padding: 12px 30px;
+  background-color: white;
+  color: #6e8efb;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.container button:hover {
+  background-color: #0aaddf6b;
+  color: #ffffff;
+}

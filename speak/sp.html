@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <div class="input-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" required placeholder="Enter username">
+      </div>
+
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" required placeholder="Enter the password">
+      </div>
+
+      <button type="submit">Login</button>
+      <p class="signup-text">Don't have an account? <a href="#">Sign Up</a></p>
+    </form>
+  </div>
+
+  <script>
+    // JavaScript to handle login and redirect
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault(); // Stop the form from submitting
+
+      const user = document.getElementById('username').value;
+      const pass = document.getElementById('password').value;
+
+      // Simple check (you can remove this if not needed)
+      if (user === "Brathap.S" && pass === "S.Brathap2007") {
+        window.location.href = "ts.html"; // Redirect to text-to-speech page
+      } else {
+        alert("Invalid login");
+      }
+    });
+  </script>
+</body>
+</html>
